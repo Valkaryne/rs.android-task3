@@ -11,36 +11,36 @@ class CombinatorTests {
     @Test
     fun testCheckChoose1() {
         val result = combinator.checkChooseFromArray(arrayOf(6, 4))
-        assertEquals(result, 2)
+        assertEquals(2, result)
     }
 
     @Test
     fun testCheckChoose2() {
         val result = combinator.checkChooseFromArray(arrayOf(4, 4))
-        assertEquals(result, 1)
+        assertEquals(1, result)
     }
 
     @Test
     fun testCheckChoose3() {
         val result = combinator.checkChooseFromArray(arrayOf(4, 2))
-        assertEquals(result, null)
+        assertEquals(null, result)
     }
 
     @Test
     fun testCheckChoose4() {
         val result = combinator.checkChooseFromArray(arrayOf(35, 7))
-        assertEquals(result, 3)
+        assertEquals(3, result)
     }
 
     @Test
     fun testCheckChoose5() {
         val result = combinator.checkChooseFromArray(arrayOf(36, 7))
-        assertEquals(result, null)
+        assertEquals(null, result)
     }
 
     @Test
     fun testCheckChoose6() {
         val result = combinator.checkChooseFromArray(arrayOf(184756, 20))
-        assertEquals(result, 10)
+        assertEquals(10, result)
     }
 }
